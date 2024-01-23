@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Formular</title>
+</head>
+<body>
+
+<h2>Eksempel på en HTML-formular</h2>
+
+<form action="/din-server-side-behandling" method="post">
+    <label for="brugernavn">Brugernavn:</label>
+    <input type="text" id="brugernavn" name="brugernavn" required>
+
+    <br>
+
+    <label for="adgangskode">Adgangskode:</label>
+    <input type="password" id="adgangskode" name="adgangskode" required>
+
+    <br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br>
+
+    <label for="alder">Alder:</label>
+    <input type="number" id="alder" name="alder" required>
+
+    <br>
+
+    <label for="køn">Køn:</label>
+    <select id="køn" name="køn" required>
+        <option value="mand">Mand</option>
+        <option value="kvinde">Kvinde</option>
+        <option value="andet">Andet</option>
+    </select>
+
+    <br>
+
+    <label>Foretrukken sprog:</label>
+    <input type="checkbox" id="sprog-dansk" name="foretrukketSprog" value="dansk">
+    <label for="sprog-dansk">Dansk</label>
+    <input type="checkbox" id="sprog-engelsk" name="foretrukketSprog" value="engelsk">
+    <label for="sprog-engelsk">Engelsk</label>
+
+    <br>
+
+    <label for="kommentar">Kommentar:</label>
+    <textarea id="kommentar" name="kommentar" rows="4" cols="50"></textarea>
+
+    <br>
+
+    <input type="submit" value="Send">
+</form>
+
+</body>
+</html>
